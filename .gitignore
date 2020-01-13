@@ -1,5 +1,5 @@
 .DS_store
 Two_circles_mapper.html
-build .
-dist .
+build/
+dist/
 pysheaf.egg-info .
