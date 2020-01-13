@@ -1,0 +1,8 @@
+README.md
+pysheaf/setup.py
+pysheaf.egg-info/PKG-INFO
+pysheaf.egg-info/SOURCES.txt
+pysheaf.egg-info/dependency_links.txt
+pysheaf.egg-info/not-zip-safe
+pysheaf.egg-info/requires.txt
+pysheaf.egg-info/top_level.txt

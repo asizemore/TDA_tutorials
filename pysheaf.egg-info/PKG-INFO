@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pysheaf
+Version: 0.3.1
+Summary: Python applied sheaf computation library
+Home-page: http://github.com/kb1dds/pysheaf
+Author: Michael Robinson and Brenda Praggastis and Janelle Henrich
+Author-email: michaelr@american.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Mathematics
