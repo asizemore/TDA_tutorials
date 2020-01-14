@@ -17,8 +17,9 @@ The Mapper algorithm helps to visualize and intuit high dimensional data. It eff
 
 ## Path signatures
 
-Computing elements of the path signature helps us understand relationships between elements of a time series, specifically lead-lag relationships. Using ideas from [6](https://arxiv.org/abs/1405.4537), [7](https://projecteuclid.org/euclid.bams/1183539443), the authors of [8](https://www.mitpressjournals.org/doi/full/10.1162/NETN_a_00053) used path signatures to understand differences between brain activity from tinnitus and healthy controls. The example in `PaathSignaturesExamples.ipynb` uses the `iisignature` [package](https://pypi.org/project/iisignature/) and calculates the lead matrix (matrix showing lead-lag relationships) for generated paths. Additionally the example examines the effect of random noise in the sample on the calculated lead matrix.
+Computing elements of the path signature helps us understand relationships between elements of a time series, specifically lead-lag relationships. Using ideas from [6](https://arxiv.org/abs/1405.4537), [7](https://projecteuclid.org/euclid.bams/1183539443), the authors of [8](https://www.mitpressjournals.org/doi/full/10.1162/NETN_a_00053) used path signatures to understand differences between brain activity from tinnitus and healthy controls. The example in `PathSignaturesExamples.ipynb` uses the `iisignature` [package](https://pypi.org/project/iisignature/) and calculates the lead matrix (matrix showing lead-lag relationships) for generated paths. Additionally the example examines the effect of random noise in the sample on the calculated lead matrix.
 
 
-## Sheaf examples.
-wat.
+## Sheaves
+
+Graphs with data atop nodes that satisfy constraints across edges can often be modeled with the sheaf formalism. For an introduction to sheaves, please see [9](https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf), [10](https://arxiv.org/abs/1303.3255), [11](https://arxiv.org/abs/1603.01446). The brief example in `SheavesExample.ipynb` demonstrates how to construct a sheaf and calculate the consistency radius using `pysheaf`. The [pysheaf](https://github.com/kb1dds/pysheaf) package has multiple examples, and ours draws from [this](https://github.com/kb1dds/pysheaf/blob/master/pysheaf/consistencyFiltrationExample.py) example but uses the specific case of Figure 3a in Blevins and Bassett 2020. In coming months we expect to expand this notebook to include a sheaf laplacian demonstration using [SheafLearning.jl](https://github.com/hansenjakob/SheafLearning.jl). 

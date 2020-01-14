@@ -29,10 +29,9 @@ USER jovyan
 COPY PersistentHomologyExample.ipynb .
 COPY data .
 COPY PH_helper_functions.jl .
-COPY Sheaves_python.ipynb .
+COPY SheavesExample.ipynb .
 COPY PathSignaturesExamples.ipynb .
 COPY MapperExamples.ipynb .
-COPY README_tda.pdf .
 COPY pysheaf .
 
 RUN python setup.py install
