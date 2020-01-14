@@ -2,7 +2,7 @@
 
 The recently developed field of Topological Data Analysis (TDA) provides multiple computational methods that can be used to understand complex systems. These techniques include Mapper, persistent homology, path signatures, and sheaf theory. The goal of this repository is to offer an introduction to these ideas by way of a simple example. All notebooks use a Julia kernel, but a few include calls to Python packages.
 
-Please contact <annsize@seas.upenn.edu> for questions.
+Please contact annsize at seas dot upenn dot edu for questions.
 
 
 ## Persistent Homology
@@ -22,4 +22,4 @@ Computing elements of the path signature helps us understand relationships betwe
 
 ## Sheaves
 
-Graphs with data atop nodes that satisfy constraints across edges can often be modeled with the sheaf formalism. For an introduction to sheaves, please see [9](https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf), [10](https://arxiv.org/abs/1303.3255), [11](https://arxiv.org/abs/1603.01446). The brief example in `SheavesExample.ipynb` demonstrates how to construct a sheaf and calculate the consistency radius using `pysheaf`. The [pysheaf](https://github.com/kb1dds/pysheaf) package has multiple examples, and ours draws from [this](https://github.com/kb1dds/pysheaf/blob/master/pysheaf/consistencyFiltrationExample.py) example but uses the specific case of Figure 3a in Blevins and Bassett 2020. In coming months we expect to expand this notebook to include a sheaf laplacian demonstration using [SheafLearning.jl](https://github.com/hansenjakob/SheafLearning.jl). 
+Graphs with data atop nodes that satisfy constraints across edges can often be modeled with the sheaf formalism. For an introduction to sheaves, please see [9](https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf), [10](https://arxiv.org/abs/1303.3255), [11](https://arxiv.org/abs/1603.01446). The brief example in `SheavesExample.ipynb` demonstrates how to construct a sheaf and calculate the consistency radius using `pysheaf`. The [pysheaf](https://github.com/kb1dds/pysheaf) package has multiple examples, and ours draws from [this](https://github.com/kb1dds/pysheaf/blob/master/pysheaf/consistencyFiltrationExample.py) example but uses the specific case of Figure 3a in Blevins and Bassett 2020. In coming months we expect to expand this notebook to include a sheaf laplacian demonstration using [SheafLearning.jl](https://github.com/hansenjakob/SheafLearning.jl).
