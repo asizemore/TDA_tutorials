@@ -19,7 +19,6 @@ RUN julia -e 'using Pkg; Pkg.add("DataFrames")'
 RUN julia -e 'using Pkg; Pkg.add("PyCall")'
 RUN julia -e 'using Pkg; Pkg.add("LinearAlgebra")'
 RUN julia -e 'using Pkg; Pkg.add("GraphPlot")'
-RUN julia -e 'using Pkg; Pkg.add("https://github.com/hansenjakob/SheafLearning.jl")'
 
 USER root
 RUN apt-get update && apt-get install -y \
