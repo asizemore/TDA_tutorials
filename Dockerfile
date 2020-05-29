@@ -1,10 +1,11 @@
-FROM jupyter/datascience-notebook:latest
+FROM jupyter/datascience-notebook:ad3574d3c5c7
 
 RUN pip install iisignature
 RUN pip install kmapper
-RUN pip install sklearn
+# RUN pip install sklearn
 RUN pip install networkx
 
+RUN pip install git+https://github.com/kb1dds/pysheaf.git
 RUN julia -e 'using Pkg; Pkg.add("HDF5")'
 RUN julia -e 'using Pkg; Pkg.add("JLD")'
 RUN julia -e 'using Pkg; Pkg.add("Plotly")'
@@ -26,15 +27,16 @@ RUN apt-get update && apt-get install -y \
 
 USER jovyan
 
-COPY PersistentHomologyExample.ipynb .
-COPY data .
-COPY PH_helper_functions.jl .
-COPY SheavesExample.ipynb .
-COPY PathSignaturesExamples.ipynb .
-COPY MapperExamples.ipynb .
-COPY pysheaf .
+# COPY PersistentHomologyExample.ipynb .
+# COPY data .
+# COPY PH_helper_functions.jl .
+# COPY SheavesExample.ipynb .
+# COPY PathSignaturesExamples.ipynb .
+# COPY MapperExamples.ipynb .
+# COPY pysheaf .
 
-RUN python setup.py install
+# RUN python setup.py install
+# RUN pip install pysheaf
 
 
 

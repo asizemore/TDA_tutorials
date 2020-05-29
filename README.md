@@ -5,6 +5,21 @@ The recently developed field of Topological Data Analysis (TDA) provides multipl
 Please contact annsize at seas dot upenn dot edu for questions.
 
 
+
+------
+## How to run this tutorial
+
+These collections of notebooks can be used as standalone files, but for ease they can also be run inside a docker container. The following are instrucitons for running in a docker container (recommended).
+
+0. Install docker (I use Docker Desktop).
+1. In the terminal, navigate to this directory and execute `make build`.
+2. Once the docker image has finished building, you can execute `make run` to use a read-only (no saving) version, or I prefer to mount the directory by instead executing `docker run -it --rm -p 8888:8888 -v $(pwd):/home/jovyan/ ph_tutorial:deploy0520`.
+3. Copy the http://127.0.0... path into your favorite browser (warning this code only tested on Chrome).
+4. Enjoy learning about topological data analysis!
+
+------
+
+
 ## Persistent Homology
 
 In brief, persistent homology chronicles evolving cavities within a filtered simplicial complex. Please see [1](https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-017-0109-5), [2](https://www.ams.org/journals/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf), [3](https://www.mitpressjournals.org/doi/pdf/10.1162/netn_a_00073) for an introduction. In the `PersistentHomologyExample.ipynb` notebook, we use the [Eirene](https://github.com/Eetion/Eirene.jl) package to compute the persistent homology of a subset of the NYC food data from [Open Food Facts](https://world.openfoodfacts.org/). Other packages to compute persistent homology include [Gudhi](http://gudhi.gforge.inria.fr/)(C++, Python), [Javaplex](http://appliedtopology.github.io/javaplex/)(MATLAB), [TDA](https://cran.r-project.org/web/packages/TDA/)(R), and [Dionysus](https://www.mrzv.org/software/dionysus/)(C++, Python).
@@ -22,4 +37,4 @@ Computing elements of the path signature helps us understand relationships betwe
 
 ## Sheaves
 
-Graphs with data atop nodes that satisfy constraints across edges can often be modeled with the sheaf formalism. For an introduction to sheaves, please see [9](https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf), [10](https://arxiv.org/abs/1303.3255), [11](https://arxiv.org/abs/1603.01446). The brief example in `SheavesExample.ipynb` demonstrates how to construct a sheaf and calculate the consistency radius using `pysheaf`. The [pysheaf](https://github.com/kb1dds/pysheaf) package has multiple examples, and ours draws from [this](https://github.com/kb1dds/pysheaf/blob/master/pysheaf/consistencyFiltrationExample.py) example but uses the specific case of Figure 3a in Blevins and Bassett 2020. In coming months we expect to expand this notebook to include a sheaf laplacian demonstration using [SheafLearning.jl](https://github.com/hansenjakob/SheafLearning.jl).
+Graphs with data atop nodes that satisfy constraints across edges can often be modeled with the sheaf formalism. For an introduction to sheaves, please see [9](https://www.math.upenn.edu/~jhansen/content/gentleintroduction.pdf), [10](https://arxiv.org/abs/1303.3255), [11](https://arxiv.org/abs/1603.01446). The brief example in `SheavesExample.ipynb` demonstrates how to construct a sheaf and calculate the consistency radius using `pysheaf`. The [pysheaf](https://github.com/kb1dds/pysheaf) package has multiple examples, and ours draws from [this](https://github.com/kb1dds/pysheaf/blob/master/pysheaf/consistencyFiltrationExample.py) example but uses the specific case of Figure 3a in Blevins and Bassett 2020. To work with sheaf laplacians, please check out [SheafLearning.jl](https://github.com/hansenjakob/SheafLearning.jl).
